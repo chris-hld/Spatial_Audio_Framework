@@ -89,13 +89,14 @@ $(document).ready(function(){initNavTree('saf__externals_8h.html',''); initResiz
 
 <p>Include header for SAF externals.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &lt;netcdf.h&gt;</code><br />
+</div>
 <p><a href="saf__externals_8h_source.html">Go to the source code of this file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Include header for SAF externals. </p>
 <dl class="section note"><dt>Note</dt><dd>Including this header is optional and only needed if you wish to have access to these external libraries. (i.e. not including this header will mean that these libraries are only used internally by SAF and will not be accessible in your project).</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Using ATLAS (SAF_USE_ATLAS) as the performance library is not recommended, since some LAPACK routines are not implemented by the library! However, if you don't mind losing some SAF functionality (namely: certain veclib utility functions), then it may still be a good choice for your particular project.</dd></dl>
-<h2><a class="anchor" id="autotoc_md48"></a>
+<h2><a class="anchor" id="autotoc_md49"></a>
 Required Dependencies</h2>
 <p>A performance library comprising CBLAS and LAPACK routines is required by SAF. Add one of the following FLAGS to your project's preprocessor definitions in order to enable one of these suitable performance libraries, (which must be correctly linked when building SAF):</p><ul>
 <li>SAF_USE_INTEL_MKL: to enable Intel's Math Kernal Library with the Fortran LAPACK interface</li>
@@ -103,11 +104,11 @@ Required Dependencies</h2>
 <li>SAF_USE_APPLE_ACCELERATE: to enable the Accelerate framework with the Fortran LAPACK interface</li>
 <li>SAF_USE_ATLAS: to enable ATLAS BLAS routines and ATLAS's CLAPACK interface</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md49"></a>
+<h2><a class="anchor" id="autotoc_md50"></a>
 Optional dependencies</h2>
 <p>netcdf is required by the optional saf_sofa_reader module, which is enabled with the following pre-processor flag: SAF_ENABLE_SOFA_READER_MODULE</p>
 <p>Intel IPP may be optionally used with the flag: SAF_USE_INTEL_IPP</p>
-<dl class="section see"><dt>See also</dt><dd>More information can be found here: <a href="https://github.com/leomccormack/Spatial_Audio_Framework">https://github.com/leomccormack/Spatial_Audio_Framework</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd>More information can be found here: docs/PERFORMANCE_LIBRARY_INSTRUCTIONS.md</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Leo McCormack </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>06.08.2020 </dd></dl>
 
@@ -118,7 +119,7 @@ Optional dependencies</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_644e041c3a6521da7b27eba0e4eb2b95.html">framework</a></li><li class="navelem"><a class="el" href="dir_dd40116cd1cfebdc77a7c7114b29912e.html">include</a></li><li class="navelem"><a class="el" href="saf__externals_8h.html">saf_externals.h</a></li>
-    <li class="footer">Generated on Thu Oct 1 2020 13:53:13 for Spatial_Audio_Framework by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 29 2020 12:25:11 for Spatial_Audio_Framework by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
